@@ -9,6 +9,24 @@ AML has been designed to meet the needs of data scientists of all skill levels â
 
 ## Environment Setup
 <b>Note:</b> Recommend running the included notebooks (`UploadData.ipynb` & `GenerateSHAPExplanations.ipynb`) on an Azure Machine Learning Compute Instance using the preconfigured `Python 3.8 - AzureML` environment. These notebooks are intended to be run in sequence as listed here.
+
 To build and run the sample notebooks here the following resources are required:
 * Azure Machine Learning Workspace
 * Azure Machine Learning Compute Instance
+
+### Setup Steps
+
+- Provision an Azure Machine Learning Compute Instance using the instructions [available at this link](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=azure-studio).
+
+- Open a command prompt by selecting 'Terminal' from the Applications list on the compute instance tab
+
+- In the terminal execute the following commands to clone the repo into your workspace:
+
+```
+cd Users/<YOUR-USER-NAME>
+git clone https://github.com/nickwiecien/AzureML_SHAP_Demo
+```
+
+- Click the 'JupyterLab' option from the Applications list to launch the JupyterLab IDE.
+
+- From JupyterLab, navigate into `Users/YOUR-USER-NAME/AzureML_Shap_Demo/` and open the `UploadData.ipynb` notebook. From the top menubar, select Run and click 'Run All Cells' to upload and register the sample datasets. 
